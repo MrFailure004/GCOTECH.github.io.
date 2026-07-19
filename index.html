@@ -1,284 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>GCOTECH CLUB — Innovation & Projects</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="images/logo.png" />
-  <meta name="description" content="GCOTECH CLUB — Showcase of student projects, lab facilities, events, and registrations." />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GECOTECH CLUB</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Main JS -->
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <div class="brand">
-        <div class="logo"><img src="images/logo.png" alt="GCOTECH Logo" /></div>
-        <div>GCOTECH CLUB</div>
-      </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">
+        <div class="brand-logo">G</div>
+        <div>
+          <h1>GECOTECH CLUB</h1>
+          <p>Innovate • Build • Showcase</p>
+        </div>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
       <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#team">Team</a>
+        <a href="#team">In-Charges</a>
         <a href="#lab">Lab</a>
         <a href="#events">Events</a>
         <a href="#announcements">Announcements</a>
+        <a href="#contact">Contact</a>
       </nav>
-
-      <div class="nav-actions">
-        <button class="btn btn-outline" id="menuBtn" aria-label="Toggle menu">☰</button>
-        <a class="btn btn-primary" id="registerBtn" href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" rel="noopener">Register</a>
-      </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">Innovate. Build. Showcase.</span>
-          <h1><span class="grad-text">GCOTECH CLUB</span><br>Where ideas become working innovation.</h1>
-          <p class="lead">
-            A platform to present student projects, technical demonstrations, lab resources, events, competitions, and announcements.
-          </p>
+  <!-- ================= HERO ================= -->
+  <section class="hero section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="pill">
+          Welcome to GECOTECH CLUB
+        </span>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">Explore Projects</a>
-            <a class="btn btn-outline" href="#events">View Events</a>
-          </div>
+        <h2>
+          Showcasing Student Innovation,
+          Projects & Technical Excellence
+        </h2>
 
-          <div class="stats" aria-hidden="true">
-            <div class="stat">
-              <h3 id="stat-projects">50+</h3>
-              <p>Projects Showcased</p>
-            </div>
-            <div class="stat">
-              <h3 id="stat-events">20+</h3>
-              <p>Events & Competitions</p>
-            </div>
-            <div class="stat">
-              <h3 id="stat-students">100%</h3>
-              <p>Student Innovation</p>
-            </div>
-          </div>
+        <p>
+          GECOTECH CLUB provides a platform where students can
+          showcase projects, attend workshops,
+          participate in competitions,
+          and collaborate with faculty members.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            Explore Projects
+          </a>
+
+          <a href="#team" class="btn btn-secondary">
+            Meet Our Team
+          </a>
         </div>
-
-        <aside class="hero-card" aria-label="Club highlights">
-          <div class="floating-badge">Featured Club Highlights</div>
-          <div class="card-list">
-            <div class="mini-card">
-              <strong>Project Demo Zone</strong>
-              <span>Show prototypes, software, hardware, and creative solutions.</span>
-            </div>
-            <div class="mini-card">
-              <strong>Technical Excellence</strong>
-              <span>Lab components, machine list, and facility details.</span>
-            </div>
-            <div class="mini-card">
-              <strong>Event Registration</strong>
-              <span>Google Form registration with one click.</span>
-            </div>
-            <div class="mini-card">
-              <strong>Announcements Hub</strong>
-              <span>Notices, competition updates, and club news.</span>
-            </div>
-          </div>
-        </aside>
       </div>
-    </section>
 
-    <section id="about">
-      <div class="container">
-        <div class="section-head">
-          <h2>About the Club</h2>
-          <p>Designed for students of GCESalem and nearby colleges to build and showcase technical projects, learn together, and host competitions.</p>
-        </div>
+      <div class="hero-panel glass-box">
+        <h3>Club Highlights</h3>
+        <ul>
+          <li>Student Project Showcase</li>
+          <li>Faculty & Student Coordinators</li>
+          <li>Electronics & Mechanical Labs</li>
+          <li>Hackathons & Workshops</li>
+          <li>Events & Competitions</li>
+          <li>Announcements & Registrations</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        <div class="card">
-          <span class="tag">Our Mission</span>
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head">
+        <h2>About GECOTECH CLUB</h2>
+        <p>
+          A student-driven innovation club encouraging creativity,
+          teamwork, and real-world engineering skills.
+        </p>
+      </div>
+
+      <div class="glass-box">
+        <p>
+          GECOTECH CLUB encourages students to learn by building.
+          Members work on electronics, software,
+          robotics, automation,
+          fabrication and research-based projects.
+          The club regularly organizes workshops,
+          competitions,
+          technical talks,
+          and project demonstrations
+          to improve practical knowledge.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head">
+        <h2>Project Showcase</h2>
+        <p>
+          Explore innovative projects developed by our students.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <article class="info-card">
+          <div class="tag">
+            AI / IoT
+          </div>
+          <h3>Smart Automation System</h3>
           <p>
-            GCOTECH CLUB aims to inspire practical learning by providing infrastructure, mentorship, and a public showcase for student innovations.
+            Intelligent monitoring and automation system
+            designed for energy-efficient campus management.
           </p>
+        </article>
+
+        <article class="info-card">
+          <div class="tag">
+            Robotics
+          </div>
+          <h3>Obstacle Avoiding Robot</h3>
+          <p>
+            Autonomous robot capable of obstacle detection
+            using ultrasonic sensors.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <div class="tag">
+            Software
+          </div>
+          <h3>Club Management Portal</h3>
+          <p>
+            A responsive website to manage club activities,
+            projects,
+            announcements and events.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TEAM SECTION ================= -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-head">
+        <h2>Meet Our Club In-Charges</h2>
+        <p>
+          Dedicated faculty and student coordinators guiding
+          innovation, technical activities, and project development.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <!-- Card 1 -->
+        <article class="profile-card">
+          <img src="images/incharge1.jpg"
+               alt="Mr. Dharanish"
+               class="profile-img">
+          <div class="profile-body">
+            <h3>Mr. Dharanish</h3>
+            <span>Club Director</span>
+            <p><strong>Department:</strong> Computer Science and Engineering</p>
+            <p><strong>Email:</strong> sbdharan2511@gmail.com</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="profile-card">
+          <img src="images/incharge2.jpg"
+               alt="Ms. Apoorna"
+               class="profile-img">
+          <div class="profile-body">
+            <h3>Ms. Apoorna</h3>
+            <span>Club Director</span>
+            <p><strong>Department:</strong> Electronics and Electronics Engineering</p>
+            <p><strong>Email:</strong> apoorna@gmail.com</p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="profile-card">
+          <img src="images/incharge3.jpg"
+               alt="Mr. Failure"
+               class="profile-img">
+          <div class="profile-body">
+            <h3>Mr. Failure</h3>
+            <span>Electronics Lab Incharge</span>
+            <p><strong>Department:</strong> Electronics and Electronics Engineering</p>
+            <p><strong>Email:</strong> masterhacking004@gmail.com</p>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="profile-card">
+          <img src="images/incharge4.jpg"
+               alt="Mr. Pragatheeswaran"
+               class="profile-img">
+          <div class="profile-body">
+            <h3>Ms. Pragatheeswaran</h3>
+            <span>Protocol Officer</span>
+            <p><strong>Department:</strong> Mechanical Engineering</p>
+            <p><strong>Email:</strong> name4@example.com</p>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="profile-card">
+          <img src="images/incharge5.jpg"
+               alt="Ms. Dhanusri"
+               class="profile-img">
+          <div class="profile-body">
+            <h3>Ms. Dhanusri</h3>
+            <span>Electronics Lab Incharge</span>
+            <p><strong>Department:</strong> Electronics and Electronics Engineering</p>
+            <p><strong>Email:</strong> jdhanu556@gmail.com</p>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="profile-card">
+          <img src="images/incharge6.jpg"
+               alt="Ms. Harinisri"
+               class="profile-img">
+          <div class="profile-body">
+            <h3>Ms. Harinisri</h3>
+            <span>Protocol Officer</span>
+            <p><strong>Department:</strong> Electronics and Electronics Engineering</p>
+            <p><strong>Email:</strong> name6@example.com</p>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="profile-card">
+          <img src="images/incharge7.jpg"
+               alt="Mr. Gokulraj"
+               class="profile-img">
+          <div class="profile-body">
+            <h3>Mr. Gokulraj</h3>
+            <span>Treasurer</span>
+            <p><strong>Department:</strong> Electronics and Communication Engineering</p>
+            <p><strong>Email:</strong> name7@example.com</p>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="profile-card">
+          <img src="images/incharge8.jpg"
+               alt="Ms. Shakimeena"
+               class="profile-img">
+          <div class="profile-body">
+            <h3>Ms. Shakimeena</h3>
+            <span>Mechanical Lab Incharge</span>
+            <p><strong>Department:</strong> Mechanical Engineering</p>
+            <p><strong>Email:</strong> shakimeena2006@gmail.com</p>
+          </div>
+        </article>
+
+        <!-- Card 9 -->
+        <article class="profile-card">
+          <img src="images/incharge9.jpg"
+               alt="Ms. Madhumitha"
+               class="profile-img">
+          <div class="profile-body">
+            <h3>Ms. Madhumitha</h3>
+            <span>Treasurer</span>
+            <p><strong>Department:</strong> Electronics and Communication Engineering</p>
+            <p><strong>Email:</strong> name9@example.com</p>
+          </div>
+        </article>
+
+        <!-- Card 10 -->
+        <article class="profile-card">
+          <img src="images/incharge10.jpg"
+               alt="Ms. Gayathri"
+               class="profile-img">
+          <div class="profile-body">
+            <h3>Ms. Gayathri</h3>
+            <span>Computer Lab Incharge</span>
+            <p><strong>Department:</strong> Computer Science Engineering</p>
+            <p><strong>Email:</strong> name10@example.com</p>
+          </div>
+        </article>
+
+        <!-- Card 11 -->
+        <article class="profile-card">
+          <img src="images/incharge11.jpg"
+               alt="Mr. Priyan"
+               class="profile-img">
+          <div class="profile-body">
+            <h3>Ms. Priyan</h3>
+            <span>Social Media Handler</span>
+            <p><strong>Department:</strong> Civil Engineering</p>
+            <p><strong>Email:</strong> name11@example.com</p>
+          </div>
+        </article>
+
+        <!-- Card 12 -->
+        <article class="profile-card">
+          <img src="images/incharge12.jpg"
+               alt="Ms. Sheern Furhana"
+               class="profile-img">
+          <div class="profile-body">
+            <h3>Ms. Sheern Furhana</h3>
+            <span>Department Executive</span>
+            <p><strong>Department:</strong> Civil Engineering</p>
+            <p><strong>Email:</strong> name12@example.com</p>
+          </div>
+        </article>
+
+        <!-- Card 13 -->
+        <article class="profile-card">
+          <img src="images/incharge13.jpg"
+               alt="Ms. Sherly"
+               class="profile-img">
+          <div class="profile-body">
+            <h3>Ms. Sherly</h3>
+            <span>Department Executive</span>
+            <p><strong>Department:</strong> Electronic Communication Engineering</p>
+            <p><strong>Email:</strong> ezhil6734@gmail.com</p>
+          </div>
+        </article>
+
+        <!-- Card 14 -->
+        <article class="profile-card">
+          <img src="images/incharge15.jpg"
+               alt="Ms. Suji"
+               class="profile-img">
+          <div class="profile-body">
+            <h3>Ms. Suji</h3>
+            <span>Department Executive</span>
+            <p><strong>Department:</strong> Computer Science Engineering</p>
+            <p><strong>Email:</strong> sujiprakasam06@gmail.com</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LAB SECTION ================= -->
+  <section class="section" id="lab">
+    <div class="container">
+      <div class="section-head">
+        <h2>Club Labs</h2>
+        <p>Electronics, Mechanical and Computer labs for hands-on projects.</p>
+      </div>
+
+      <div class="glass-box">
+        <ul class="check-list">
+          <li>Electronics Lab for IoT and embedded systems.</li>
+          <li>Mechanical Lab for fabrication and prototyping.</li>
+          <li>Computer Lab for software and AI development.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EVENTS SECTION ================= -->
+  <section class="section" id="events">
+    <div class="container">
+      <div class="section-head">
+        <h2>Upcoming Events</h2>
+        <p>Workshops, hackathons, and competitions for GECOTECH members.</p>
+      </div>
+
+      <div class="event-box">
+        <div>
+          <h3>Annual Innovation Hackathon</h3>
+          <p>Date: Coming Soon</p>
+          <p>Venue: GECOTECH Lab Complex</p>
+        </div>
+        <div>
+          <p>Stay tuned for registration details and project themes.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="projects">
-      <div class="container">
-        <div class="section-head">
-          <h2>Project Showcase</h2>
-          <p>Featured and ongoing projects from club members with demos, descriptions, and team credits.</p>
-        </div>
-
-        <div class="grid-3" id="projectsGrid">
-          <article class="card project-card">
-            <img src="images/project1.jpg" alt="Smart Campus Automation" />
-            <span class="tag">AI / IoT</span>
-            <h3>Smart Campus Automation</h3>
-            <p>Automated lighting, attendance, and monitoring system built for efficiency and sustainability.</p>
-            <a class="btn btn-outline" href="#projects">Read more</a>
-          </article>
-
-          <article class="card project-card">
-            <img src="images/project2.jpg" alt="Obstacle Avoiding Robot" />
-            <span class="tag">Robotics</span>
-            <h3>Obstacle Avoiding Robot</h3>
-            <p>Compact robot designed for navigation, sensing, and practical automation learning.</p>
-            <a class="btn btn-outline" href="#projects">Read more</a>
-          </article>
-
-          <article class="card project-card">
-            <img src="images/project3.jpg" alt="Student Innovation Portal" />
-            <span class="tag">Software</span>
-            <h3>Student Innovation Portal</h3>
-            <p>Web platform to manage projects, events, registrations, and announcements.</p>
-            <a class="btn btn-outline" href="#projects">Read more</a>
-          </article>
-        </div>
+  <!-- ================= ANNOUNCEMENTS SECTION ================= -->
+  <section class="section" id="announcements">
+    <div class="container">
+      <div class="section-head">
+        <h2>Announcements</h2>
+        <p>Latest updates and notices from GECOTECH CLUB.</p>
       </div>
-    </section>
 
-    <section id="team">
-      <div class="container">
-        <div class="section-head">
-          <h2>Club In-Charges</h2>
-          <p>Faculty and student leads who manage labs, events, and mentoring.</p>
-        </div>
-
-        <div class="grid-2">
-          <div class="card">
-            <div class="profile">
-              <img class="avatar" src="images/team1.jpg" alt="Dr. Name" />
-              <div>
-                <h3>Dr. Arun Kumar</h3>
-                <div class="meta">Club In-Charge / HOD</div>
-                <div class="meta">arun.kumar@gcesalem.edu.in</div>
-                <div class="meta">+91 98765 43210</div>
-              </div>
-            </div>
-            <p style="margin-top:12px;">Responsible for overall coordination, mentoring, and academic guidance.</p>
-          </div>
-
-          <div class="card">
-            <div class="profile">
-              <img class="avatar" src="images/team2.jpg" alt="Ms. Name" />
-              <div>
-                <h3>Ms. Priya R</h3>
-                <div class="meta">Lab Coordinator</div>
-                <div class="meta">priya.r@gcesalem.edu.in</div>
-                <div class="meta">+91 91234 56789</div>
-              </div>
-            </div>
-            <p style="margin-top:12px;">Manages lab schedules, equipment, and student training sessions.</p>
-          </div>
-        </div>
+      <div class="notice">
+        <strong>Notice:</strong>
+        <span>New members orientation will be announced shortly. Check back here for details.</span>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="lab">
-      <div class="container">
-        <div class="section-head">
-          <h2>Lab Components & Machines</h2>
-          <p>Inventory of critical lab equipment and their availability.</p>
-        </div>
-
-        <div class="grid-3">
-          <div class="card">
-            <h3>Electronics Lab</h3>
-            <ul class="list">
-              <li><span>Oscilloscope</span><span>Available</span></li>
-              <li><span>Function Generator</span><span>Available</span></li>
-              <li><span>Power Supply</span><span>Available</span></li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Fabrication Tools</h3>
-            <ul class="list">
-              <li><span>3D Printer</span><span>Available</span></li>
-              <li><span>Laser Cutter</span><span>Available</span></li>
-              <li><span>CNC Machine</span><span>Available</span></li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Mechanical Setup</h3>
-            <ul class="list">
-              <li><span>Drilling Machine</span><span>Available</span></li>
-              <li><span>Lathe</span><span>Available</span></li>
-              <li><span>Welding Station</span><span>Available</span></li>
-            </ul>
-          </div>
-        </div>
+  <!-- ================= CONTACT SECTION ================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <h2>Contact Us</h2>
+        <p>Reach out for queries, collaborations, or project support.</p>
       </div>
-    </section>
 
-    <section id="events">
-      <div class="container">
-        <div class="section-head">
-          <h2>Events & Competitions</h2>
-          <p>Upcoming activities with registration links and schedules.</p>
-        </div>
-
-        <div class="grid-3">
-          <div class="card">
-            <h3>Hackathon 2026</h3>
-            <p>24-hour coding & prototyping challenge. Teams up to 4 members.</p>
-            <div style="margin-top:12px">
-              <a class="btn btn-primary" href="https://forms.gle/YOUR_HACKATHON_FORM" target="_blank" rel="noopener">Register</a>
-              <a class="btn btn-outline" href="#events">Details</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Robotics Challenge</h3>
-            <p>Design and test robots for obstacle courses and tasks.</p>
-            <div style="margin-top:12px">
-              <a class="btn btn-primary" href="https://forms.gle/YOUR_ROBOTICS_FORM" target="_blank" rel="noopener">Register</a>
-              <a class="btn btn-outline" href="#events">Details</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Project Expo</h3>
-            <p>Showcase student projects to industry and peers.</p>
-            <div style="margin-top:12px">
-              <a class="btn btn-primary" href="https://forms.gle/YOUR_EXPO_FORM" target="_blank" rel="noopener">Register</a>
-              <a class="btn btn-outline" href="#events">Details</a>
-            </div>
-          </div>
-        </div>
+      <div class="contact-box">
+        <p>Email: gecotechclub@example.com</p>
+        <p>Address: Government Engineering College, Tech Block, Salem, Tamil Nadu</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="announcements">
-      <div class="container">
-        <div class="section-head">
-          <h2>Announcements</h2>
-          <p>Latest notices for students related to labs, events, and deadlines.</p>
-        </div>
-
-        <div class="announcement" id="announcementList">
-          <div>
-            <strong>Welcome to GCOTECH Club — New Semester Activities</strong>
-            <p class="meta">Orientation on July 20, 2026. Registration required.</p>
-          </div>
-          <div>
-            <a class="btn btn-primary" href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" rel="noopener">Register</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
+  <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <div class="container">
-      <p>GCOTECH CLUB — Government College of Engineering, Salem. NH-7, Bangalore Main Road, Salem - 636011.</p>
-      <p style="margin-top:8px">Created by GCOTECH Club • Follow us on campus noticeboard and social channels.</p>
+      <p>&copy; 2026 GECOTECH CLUB. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
